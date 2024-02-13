@@ -1,4 +1,6 @@
-
+<p align="center">
+  <img src="./app/favicon.ico" alt="logo">
+</p>
 
 # SaaS AI Platform
 
