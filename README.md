@@ -1,58 +1,63 @@
-# A SaaS AI Platform with Next.js 13, React, Tailwind, Prisma, Stripe
-<!-- ![Copy of Copy of Copy of Fullstack Twitter Clone](https://github.com/AntonioErdeljac/next13-ai-saas/assets/23248726/c47e604a-b50b-4eb0-b420-fda20908f522) -->
 
 
+# SaaS AI Platform
 
-This is a repository for Build a SaaS AI Platform with Next.js 13, React, Tailwind, Prisma, Stripe
+Build a comprehensive SaaS AI Platform with a modern tech stack including Next.js 13, React, Tailwind CSS, Prisma, and Stripe. This platform is designed to offer a wide range of AI-powered tools, from image and video generation to music creation and conversational AI. Featuring a sleek Tailwind design, full responsiveness, and a variety of authentication methods, this platform is equipped to handle the needs of diverse users.
 
+## Features
 
-Features:
+- **Stylish Interface:** Utilize Tailwind CSS for design, animations, and effects.
+- **Responsive Design:** Ensures the platform works seamlessly across devices.
+- **Authentication:** Supports Clerk Authentication, including email, Google, and 9+ social logins.
+- **Form Validation:** Leverages react-hook-form for client-side form handling.
+- **Error Handling:** Implements react-toast for server-side error feedback.
+- **AI Tools:**
+  - Image Generation with OpenAI.
+  - Video Generation with Replicate AI.
+  - Conversation Generation with OpenAI.
+  - Music Generation with Replicate AI.
+- **Subscription:** Integrates Stripe for monthly subscription management.
+- **API Rate Limiting:** Implements a free tier with API usage limits.
+- **Routing:** Demonstrates POST, DELETE, and GET routes in route handlers.
+- **Server-Side Data Fetching:** Shows how to fetch data in server components directly from the database.
+- **Component Relations:** Explains handling relations between server and child components.
+- **Layout Reusability:** Guides on reusing layouts for a consistent UI.
+- **Folder Structure:** Details the folder structure in a Next.js 13 App Router setup.
 
-- Tailwind design
-- Tailwind animations and effects
-- Full responsiveness
-- Clerk Authentication (Email, Google, 9+ Social Logins)
-- Client form validation and handling using react-hook-form
-- Server error handling using react-toast
-- Image Generation Tool (Open AI)
-- Video Generation Tool (Replicate AI)
-- Conversation Generation Tool (Open AI)
-- Music Generation Tool (Replicate AI)
-- Page loading state
-- Stripe monthly subscription
-- Free tier with API limiting
-- How to write POST, DELETE, and GET routes in route handlers (app/api)
-- How to fetch data in server react components by directly accessing database (WITHOUT API! like Magic!)
-- How to handle relations between Server and Child components!
-- How to reuse layouts
-- Folder structure in Next 13 App Router
+## Prerequisites
 
-### Prerequisites
+- Node.js version 18.x.x
 
-**Node version 18.x.x**
+## Getting Started
 
-### Cloning the repository
+### Cloning the Repository
 
-```shell
+```bash
 git clone https://github.com/jeffjiang13/MatrixAI.git
 ```
 
-### Install packages
+### Installing Dependencies
 
-```shell
-npm i
+Navigate to the project directory and install the necessary packages:
+
+```bash
+npm install
 ```
 
-### Start the app
+### Running the Application
 
-```shell
+Start the development server with:
+
+```bash
 npm run dev
 ```
 
-## Available commands
+## Available Commands
 
-Running commands with npm `npm run [command]`
+Execute these commands using `npm run <command>` to manage the application:
 
-| command         | description                              |
-| :-------------- | :--------------------------------------- |
-| `dev`           | Starts a development instance of the app |
+| Command | Description                                |
+|---------|--------------------------------------------|
+| `dev`   | Starts the app in development mode.        |
+
+---
