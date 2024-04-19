@@ -3,6 +3,7 @@
 import TypewriterComponent from "typewriter-effect";
 import Link from "next/link";
 import { useAuth } from "@clerk/nextjs";
+import Image from 'next/image'; // Import the Image component
 
 import { Button } from "@/components/ui/button";
 
@@ -26,6 +27,17 @@ export const LandingHero = () => {
               loop: true,
             }}
           />
+          <br />
+          <div style={{ width: '100%', maxWidth: '1000px', margin: '0 auto' }}>
+            <Image
+              src="/banner.webp"
+              alt="AI Tools Banner"
+              width={1000}
+              height={600}
+              layout="intrinsic"
+              className="rounded-xl shadow-2xl shadow-yellow-500"
+            />
+          </div>
         </div>
       </div>
       <div className="text-sm md:text-xl font-light text-zinc-400">
