@@ -30,6 +30,7 @@
     "clsx": "^1.2.1",
     "cmdk": "^0.2.0",
     "crisp-sdk-web": "^1.0.19",
+    "emailjs-com": "^3.2.0",
     "eslint": "8.44.0",
     "eslint-config-next": "13.4.9",
     "lucide-react": "^0.259.0",
