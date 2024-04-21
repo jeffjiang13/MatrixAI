@@ -13,7 +13,6 @@ const Documentation: React.FC = () => {
   const toggleSection = (section: string) => {
     setIsOpen(prev => ({ ...prev, [section]: !prev[section] }));
   };
-/* eslint-disable no-unused-vars, no-console */
 
   return (
     <>
@@ -35,20 +34,20 @@ const Documentation: React.FC = () => {
           </header>
           <section id="introduction" className="mb-8">
           <h2 className="text-xl lg:text-2xl font-bold" onClick={() => toggleSection('introduction')}>Introduction</h2>
-            {isOpen.introduction && <p>MatrixAI is designed to serve as a robust platform integrating cutting-edge AI technologies to provide solutions for image and video generation, conversational AI, and music creation. This platform harnesses the power of Next.js, React, and additional modern technologies to deliver high-performance AI tools in a user-friendly environment. Here, we will guide you through the platform's architecture, highlight its unique features, and show how it can be tailored to meet various business needs.
+            {isOpen.introduction && <p>MatrixAI is designed to serve as a robust platform integrating cutting-edge AI technologies to provide solutions for image and video generation, conversational AI, and music creation. This platform harnesses the power of Next.js, React, and additional modern technologies to deliver high-performance AI tools in a user-friendly environment. Here, we will guide you through the platform&apos;s architecture, highlight its unique features, and show how it can be tailored to meet various business needs.
           </p>}
           </section>
 
           <section id="getting-started" className="mb-8">
             <h2 className="text-2xl font-bold" onClick={() => toggleSection('gettingStarted')}>Getting Started</h2>
-            {isOpen.gettingStarted && <p>To begin using MatrixAI, ensure you have Node.js version 18.x.x installed. Start by cloning the repository from GitHub, then navigate to the project directory and install all required dependencies using npm. This section will walk you through each step, explain the purpose of key dependencies, and offer troubleshooting tips for common setup issues. By the end, you'll have a local development environment running MatrixAI, ready for further exploration and customization.
+            {isOpen.gettingStarted && <p>To begin using MatrixAI, ensure you have Node.js version 18.x.x installed. Start by cloning the repository from GitHub, then navigate to the project directory and install all required dependencies using npm. This section will walk you through each step, explain the purpose of key dependencies, and offer troubleshooting tips for common setup issues. By the end, you&apos;ll have a local development environment running MatrixAI, ready for further exploration and customization.
             </p>}
           </section>
           <section id="features" className="mb-8">
             <h2 className="text-2xl font-bold" onClick={() => toggleSection('features')}>Features</h2>
             {isOpen.features && <p>MatrixAI offers several cutting-edge features:
               <br />
-              - Image Generation: Utilize OpenAI's advanced algorithms to generate unique images based on textual descriptions.
+              - Image Generation: Utilize OpenAI&apos;s advanced algorithms to generate unique images based on textual descriptions.
               <br />
               - Video Generation: Create dynamic videos from predefined scripts using Replicate AI.
               <br />
@@ -79,7 +78,7 @@ const Documentation: React.FC = () => {
             <br />
             - What are the system requirements for using MatrixAI effectively?
             <br />
-            - How to contribute to MatrixAI's development or report a bug?
+            - How to contribute to MatrixAI&apos;s development or report a bug?
             This section aims to quickly resolve common issues and clarify operational queries, improving user satisfaction and engagement.</p>}
           </section>
           <section id="support" className="mb-8">
