@@ -13,6 +13,7 @@ const Documentation: React.FC = () => {
   const toggleSection = (section: string) => {
     setIsOpen(prev => ({ ...prev, [section]: !prev[section] }));
   };
+/* eslint-disable no-unused-vars, no-console */
 
   return (
     <>
