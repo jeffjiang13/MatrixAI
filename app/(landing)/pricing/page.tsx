@@ -1,47 +1,64 @@
-
+"use client"
 import React from 'react';
+import Link from 'next/link';
+import { useAuth } from '@clerk/nextjs';
 
-const Documentation: React.FC = () => {
+const plans = [
+  {
+    id: 'free',
+    name: 'Free Plan',
+    price: 'Free',
+    features: [
+      '5 Tokens per month',
+      'Access to basic features',
+      'Community Support'
+    ],
+    description: 'A perfect start for individuals to explore our basic features.'
+  },
+  {
+    id: 'pro',
+    name: 'Pro Plan',
+    price: '$20/month',
+    features: [
+      'Unlimited AI Generations',
+      'Priority Email Support',
+      'Access to advanced features'
+    ],
+    description: 'Ideal for professionals and businesses that need more power and support.'
+  }
+];
+
+const PricingPage = () => {
+  const { isSignedIn } = useAuth();
+
   return (
-    <>
-      <div className="mx-auto px-4 py-8 text-white">
-        <header className="mb-10">
-          <h1 className="text-3xl font-bold">MatrixAI Documentation</h1>
-          <p className="text-gray-400">Everything you need to know to get started and use MatrixAI.</p>
-        </header>
+    <div className="text-white max-w-6xl mx-auto px-4 py-8">
+      <h1 className="text-3xl font-bold text-center mb-8">Pricing Plans</h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {plans.map(plan => (
+          <div key={plan.id} className="flex flex-col border rounded-lg p-4 shadow-lg h-full">
+            <h2 className="text-2xl font-bold mb-2">{plan.name}</h2>
+            <p className="text-lg mb-4">{plan.price}</p>
+            <ul className="mb-auto">
+              {plan.features.map(feature => (
+                <li key={feature} className="text-gray-400">{feature}</li>
+              ))}
+            </ul>
+            <p className="mb-4">{plan.description}</p>
+            <Link href={isSignedIn ? "/dashboard" : "/sign-up"} className='self-center'>
 
-        <section id="introduction" className="mb-8">
-          <h2 className="text-2xl font-bold">Introduction</h2>
-          <p>This section provides an overview of what MatrixAI is and the core functionalities it offers.</p>
-        </section>
-
-        <section id="getting-started" className="mb-8">
-          <h2 className="text-2xl font-bold">Getting Started</h2>
-          <p>Instructions on how to set up and start using MatrixAI, including installation and initial configuration steps.</p>
-        </section>
-
-        <section id="features" className="mb-8">
-          <h2 className="text-2xl font-bold">Features</h2>
-          <p>Detailed explanation of all key features such as image and video generation, AI conversational tools, and music creation capabilities.</p>
-        </section>
-
-        <section id="api-documentation" className="mb-8">
-          <h2 className="text-2xl font-bold">API Documentation</h2>
-          <p>Comprehensive guide on how to use the API, including endpoints, authentication methods, request and response formats, and error codes.</p>
-        </section>
-
-        <section id="faq" className="mb-8">
-          <h2 className="text-2xl font-bold">FAQ</h2>
-          <p>Frequently asked questions to help troubleshoot common issues and clarify typical user queries.</p>
-        </section>
-
-        <section id="support" className="mb-8">
-          <h2 className="text-2xl font-bold">Support</h2>
-          <p>How to obtain further help and support, including contact details for technical support and how to submit tickets.</p>
-        </section>
+            <button
+              onClick={() => console.log(`Subscribe to ${plan.id}`)}
+              className="bg-purple-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded mt-4 self-center"
+            >
+              {plan.id === 'free' ? 'Get Started' : 'Subscribe'}
+            </button>
+            </Link>
+          </div>
+        ))}
       </div>
-    </>
+    </div>
   );
 };
 
-export default Documentation;
+export default PricingPage;
