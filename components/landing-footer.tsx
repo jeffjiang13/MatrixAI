@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 export const LandingFooter = () => {
   return (
-    <footer className="py-4 mb-20 mt-20 text-white">
+    <footer className="py-4 mb-20 mt-20">
       <div className="max-w-screen-2xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center">
         <div className="text-center sm:text-left">
           <aside className="flex items-center gap-2 justify-center sm:justify-start mb-4 sm:mb-0">

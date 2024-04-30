@@ -8,6 +8,7 @@ import { useAuth } from '@clerk/nextjs';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { FaBars } from 'react-icons/fa';
+import ModeToggle from '@/components/mode-toggle';
 
 const font = Montserrat({ weight: '600', subsets: ['latin'] });
 
@@ -25,18 +26,18 @@ export const LandingNavbar = () => {
         <div className="relative h-8 w-8 mr-4">
           <Image layout="fill" alt="Logo" src="/logo.png" />
         </div>
-        <h1 className={cn("text-2xl font-bold text-white", font.className)}>
+        <h1 className={cn("text-2xl font-bold", font.className)}>
           MatrixAI
         </h1>
       </Link>
       <div className="hidden sm:flex items-center gap-x-4">
-        <Link href="/pricing" className="text-white hover:text-gray-200">Pricing
+        <Link href="/pricing" className=" hover:text-gray-400">Pricing
         </Link>
-        <Link href="/documentation" className="text-white hover:text-gray-200">Documentation
+        <Link href="/documentation" className=" hover:text-gray-400">Documentation
         </Link>
-        <Link href="/overview" className="text-white hover:text-gray-200">Overview
+        <Link href="/overview" className=" hover:text-gray-400">Overview
         </Link>
-        <Link href="/contact" className="text-white hover:text-gray-200">Contact
+        <Link href="/contact" className=" hover:text-gray-400">Contact
         </Link>
       </div>
       <div className="flex items-center gap-x-2">
@@ -45,21 +46,22 @@ export const LandingNavbar = () => {
             Get Started
           </Button>
         </Link>
+        <ModeToggle />
       </div>
       <div className="sm:hidden">
-        <button onClick={toggleMenu} className="text-white">
+        <button onClick={toggleMenu} className="pt-1 pl-1">
           <FaBars size={24} />
         </button>
       </div>
       {isOpen && (
-        <div className="absolute top-14 right-0 bg-black bg-opacity-75 py-4 px-8 flex flex-col items-start sm:hidden z-50">
-        <Link href="/pricing" className="text-white py-2" onClick={() => setIsOpen(false)}>Pricing
+        <div className="absolute top-14 right-0 bg-opacity-75 py-4 px-8 flex flex-col items-start sm:hidden z-50">
+        <Link href="/pricing" className="py-2" onClick={() => setIsOpen(false)}>Pricing
           </Link>
-          <Link href="/documentation" className="text-white py-2" onClick={() => setIsOpen(false)}>Documentation
+          <Link href="/documentation" className="py-2" onClick={() => setIsOpen(false)}>Documentation
           </Link>
-          <Link href="/overview" className="text-white py-2" onClick={() => setIsOpen(false)}>Overview
+          <Link href="/overview" className="py-2" onClick={() => setIsOpen(false)}>Overview
           </Link>
-          <Link href="/contact" className="text-white py-2" onClick={() => setIsOpen(false)}>Contact
+          <Link href="/contact" className="py-2" onClick={() => setIsOpen(false)}>Contact
           </Link>
         </div>
       )}
