@@ -1,6 +1,14 @@
-<p align="center">
-  <img src="./app/favicon.ico" alt="logo">
-</p>
+
+<div align="center" id="top" className="mb-10">
+<img src="./app/favicon.ico" alt="icon" width="150" height="150" />
+
+&#xa0;
+
+  <img src="./public/preview.png" alt="preview" />
+
+<a href="https://jj-matrix-ai.vercel.app/">Demo</a>
+
+</div>
 
 # SaaS AI Platform
 
