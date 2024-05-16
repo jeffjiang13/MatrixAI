@@ -2,8 +2,8 @@ import React from 'react';
 
 const Overview: React.FC = () => {
   return (
-    <div className="text-white max-w-6xl mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold text-center mb-8">Platform Overview</h1>
+    <div className="max-w-6xl mx-auto px-4 py-8">
+      <h1 className="text-3xl font-bold text-center mb-12">Platform Overview</h1>
       <section className="mb-8">
         <h2 className="text-2xl font-bold mb-4">What is MatrixAI?</h2>
         <p>MatrixAI is a comprehensive SaaS platform that leverages advanced artificial intelligence to provide innovative solutions across various domains such as image and video generation, conversational AI, and music creation. Designed with modern technologies like Next.js, React, and Tailwind CSS, MatrixAI ensures a seamless and scalable user experience.</p>

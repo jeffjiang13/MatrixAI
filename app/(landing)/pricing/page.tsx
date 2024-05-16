@@ -32,11 +32,11 @@ const PricingPage = () => {
   const { isSignedIn } = useAuth();
 
   return (
-    <div className="text-white max-w-6xl mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold text-center mb-8">Pricing Plans</h1>
+    <div className="max-w-6xl mx-auto px-4 py-8">
+      <h1 className="text-3xl font-bold text-center mb-12">Pricing Plans</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {plans.map(plan => (
-          <div key={plan.id} className="flex flex-col border rounded-lg p-4 shadow-lg h-full">
+          <div key={plan.id} className="flex flex-col border rounded-lg dark:shadow-yellow-500 p-4 shadow-lg h-full">
             <h2 className="text-2xl font-bold mb-2">{plan.name}</h2>
             <p className="text-lg mb-4">{plan.price}</p>
             <ul className="mb-auto">
