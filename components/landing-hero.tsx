@@ -11,7 +11,7 @@ export const LandingHero = () => {
   const { isSignedIn } = useAuth();
 
   return (
-    <div className="font-bold py-36 text-center space-y-5">
+    <div className="font-bold py-32 text-center space-y-5">
       <div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl space-y-5 font-extrabold">
         <h1 className="sm:hidden block animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-black">MatrixAI</h1>
         <h1>The Best AI Tool for</h1>
@@ -21,6 +21,7 @@ export const LandingHero = () => {
               strings: [
                 "Chatbot.",
                 "Photo Generation.",
+                "Video Generation.",
                 "Blog Writing.",
                 "Mail Writing."
               ],
