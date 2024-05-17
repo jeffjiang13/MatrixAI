@@ -21,16 +21,16 @@ export const LandingNavbar = () => {
   };
 
   return (
-    <nav className="p-4 bg-transparent flex items-center justify-between">
+    <nav className="p-4 bg-transparent flex items-center justify-between relative">
       <Link href="/" className="flex items-center">
         <div className="relative h-8 w-8 mr-4">
           <Image layout="fill" alt="Logo" src="/logo.png" />
         </div>
-        <h1 className={cn("text-2xl font-bold", font.className)}>
+        <h1 className={cn("text-2xl font-bold hidden sm:block", font.className)}>
           MatrixAI
         </h1>
       </Link>
-      <div className="hidden sm:flex items-center gap-x-4">
+      <div className="hidden sm:flex items-center gap-x-10 font-semibold">
         <Link href="/pricing" className=" hover:text-gray-400">Pricing
         </Link>
         <Link href="/documentation" className=" hover:text-gray-400">Documentation
@@ -40,7 +40,7 @@ export const LandingNavbar = () => {
         <Link href="/contact" className=" hover:text-gray-400">Contact
         </Link>
       </div>
-      <div className="flex items-center gap-x-2">
+      <div className="flex items-center gap-x-2 ml-auto sm:ml-0">
         <Link href={isSignedIn ? "/dashboard" : "/sign-up"}>
           <Button variant="outline" className="rounded-full hover:bg-gradient-to-r from-purple-400 to-pink-600 hover:text-white">
             Get Started
@@ -49,12 +49,12 @@ export const LandingNavbar = () => {
         <ModeToggle />
       </div>
       <div className="sm:hidden">
-        <button onClick={toggleMenu} className="pt-1 pl-1">
+        <button onClick={toggleMenu} className="p-2 rounded-md hover:bg-accent ml-2 border">
           <FaBars size={24} />
         </button>
       </div>
       {isOpen && (
-        <div className="absolute top-14 right-0 bg-opacity-75 py-4 px-8 flex flex-col items-start sm:hidden z-50">
+        <div className="absolute top-full -mt-3 rounded-lg right-0 bg-opacity-75 py-4 px-8 flex flex-col items-start sm:hidden z-50 font-semibold border backdrop-blur-sm">
         <Link href="/pricing" className="py-2" onClick={() => setIsOpen(false)}>Pricing
           </Link>
           <Link href="/documentation" className="py-2" onClick={() => setIsOpen(false)}>Documentation

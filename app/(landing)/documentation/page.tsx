@@ -37,11 +37,11 @@ const Documentation: React.FC = () => {
       </aside>
       <main className="flex-grow px-1 py-8 mx-auto lg:px-1 max-w-5xl">
         <header className="mb-10">
-          <h1 className="text-xl lg:text-3xl font-bold text-center">MatrixAI Documentation</h1>
+          <h1 className="text-2xl lg:text-3xl font-bold text-center">MatrixAI Documentation</h1>
           <p className='text-center'>Everything you need to know to get started and use MatrixAI.</p>
         </header>
         <section id="introduction" className="mb-8 border-b border-gray-200">
-          <h2 className="text-xl lg:text-2xl font-bold mb-3" onClick={() => toggleSection('introduction')}>Introduction</h2>
+          <h2 className="text-2xl font-bold mb-3" onClick={() => toggleSection('introduction')}>Introduction</h2>
           {isOpen.introduction && <p>MatrixAI is designed to serve as a robust platform integrating cutting-edge AI technologies to provide solutions for image and video generation, conversational AI, and music creation. This platform harnesses the power of Next.js, React, and additional modern technologies to deliver high-performance AI tools in a user-friendly environment. Here, we will guide you through the platform&apos;s architecture, highlight its unique features, and show how it can be tailored to meet various business needs.</p>}
         </section>
         <section id="getting-started" className="mb-8 border-b border-gray-200">
