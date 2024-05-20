@@ -45,79 +45,89 @@ const testimonials = [
 export const LandingContent = () => {
   return (
     <>
-    <section className="relative">
-      <div
-        className="overflow-hidden
-        flex
-        after:content-['']
-        after:dark:from-brand-dark
-        after:to-transparent
-        after:from-background
-        after:bg-gradient-to-l
-        after:right-0
-        after:bottom-0
-        after:top-0
-        after:w-20
-        after:z-10
-        after:absolute
+      <section className="relative">
+        <div
+          className="overflow-hidden
+          flex
+          after:content-['']
+          after:dark:from-brand-dark
+          after:to-transparent
+          after:from-background
+          after:bg-gradient-to-l
+          after:right-0
+          after:bottom-0
+          after:top-0
+          after:w-20
+          after:z-10
+          after:absolute
 
-        before:content-['']
-        before:dark:from-brand-dark
-        before:to-transparent
-        before:from-background
-        before:bg-gradient-to-r
-        before:left-0
-        before:top-0
-        before:bottom-0
-        before:w-20
-        before:z-10
-        before:absolute
-      "
-      >
-        {[...Array(2)].map((_, index) => (
-          <div
-            key={index}
-            className="flex
-              flex-nowrap
-              animate-slide-left-to-right
-            "
-          >
-            {CLIENTS.map((client) => (
-              <div
-                key={client.alt}
-                className="relative
-                  w-[200px]
-                  m-20
-                  shrink-0
-                  flex
-                  items-center
-                "
-              >
-                <Image
-                  src={client.logo}
-                  alt={client.alt}
-                  width={200}
-                  className="object-contain max-w-none"
-                />
-              </div>
-            ))}
-          </div>
-        ))}
-      </div>
-      <style jsx>{`
-        @keyframes slide-left-to-right {
-          0% {
-            transform: translateX(-100%);
+          before:content-['']
+          before:dark:from-brand-dark
+          before:to-transparent
+          before:from-background
+          before:bg-gradient-to-r
+          before:left-0
+          before:top-0
+          before:bottom-0
+          before:w-20
+          before:z-10
+          before:absolute
+        "
+        >
+          {[...Array(2)].map((_, index) => (
+            <div
+              key={index}
+              className="flex
+                flex-nowrap
+                animate-slide-left-to-right
+              "
+            >
+              {CLIENTS.map((client) => (
+                <div
+                  key={client.alt}
+                  className="relative
+                    w-[200px]
+                    m-20
+                    shrink-0
+                    flex
+                    items-center
+                  "
+                >
+                  <Image
+                    src={client.logo}
+                    alt={client.alt}
+                    width={200}
+                    className="object-contain max-w-none"
+                  />
+                </div>
+              ))}
+            </div>
+          ))}
+        </div>
+        <style jsx>{`
+          @keyframes slide-left-to-right {
+            0% {
+              transform: translateX(-100%);
+            }
+            100% {
+              transform: translateX(0%);
+            }
           }
-          100% {
-            transform: translateX(0%);
+          .animate-slide-left-to-right {
+            animation: slide-left-to-right 18s linear infinite;
           }
-        }
-        .animate-slide-left-to-right {
-          animation: slide-left-to-right 18s linear infinite;
-        }
-      `}</style>
-    </section>
+        `}</style>
+      </section>
+      <div className="w-full max-w-screen-xl mx-auto p-4">
+      <Image
+        src="/example3.jpg"
+        alt="example"
+        width={1920}
+        height={1080}
+        layout="intrinsic"
+        className="rounded-xl shadow-2xl dark:shadow-yellow-500"
+      />
+    </div>
       <section className="relative">
         <div
           className="overflow-hidden
@@ -178,26 +188,47 @@ export const LandingContent = () => {
           ))}
         </div>
       </section>
-    <div className="px-10 pb-20">
-      <h2 className="text-center text-4xl font-extrabold mb-10">Testimonials</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        {testimonials.map((item) => (
-          <Card key={item.description} className="border-2 shadow-lg dark:shadow-yellow-500 dark:bg-gray-900">
-            <CardHeader>
-              <CardTitle className="flex items-center gap-x-2">
-                <div>
-                  <p className="text-lg">{item.name}</p>
-                  <p className="text-zinc-400 text-sm">{item.title}</p>
-                </div>
-              </CardTitle>
-              <CardContent className="pt-4 px-0">
-                {item.description}
-              </CardContent>
-            </CardHeader>
-          </Card>
-        ))}
+      <div className="w-full max-w-screen-xl mx-auto p-4">
+        <Image
+          src="/example2.png"
+          alt="example2"
+          width={1920}
+          height={1080}
+          layout="intrinsic"
+          className="rounded-xl shadow-2xl dark:shadow-yellow-500"
+        />
       </div>
-    </div>
+      <br />
+      <div className="px-10 pb-20 mt-10">
+        <h2 className="text-center text-4xl font-extrabold mb-10">Testimonials</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          {testimonials.map((item) => (
+            <Card key={item.description} className="border-2 shadow-lg dark:shadow-yellow-500 dark:bg-gray-900">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-x-2">
+                  <div>
+                    <p className="text-lg">{item.name}</p>
+                    <p className="text-zinc-400 text-sm">{item.title}</p>
+                  </div>
+                </CardTitle>
+                <CardContent className="pt-4 px-0">
+                  {item.description}
+                </CardContent>
+              </CardHeader>
+            </Card>
+          ))}
+        </div>
+      </div>
+      <div className="w-full max-w-screen-xl mx-auto p-4">
+        <Image
+          src="/example.png"
+          alt="example"
+          width={1920}
+          height={1080}
+          layout="intrinsic"
+          className="rounded-sm shadow-2xl dark:shadow-yellow-500"
+        />
+      </div>
     </>
   )
 }
