@@ -103,7 +103,7 @@ const PhotoPage = () => {
               control={form.control}
               name="amount"
               render={({ field }) => (
-                <FormItem className="col-span-12 lg:col-span-2">
+                <FormItem className="col-span-12 lg:col-span-2 bg-white text-black rounded-md">
                   <Select
                     disabled={isLoading}
                     onValueChange={field.onChange}
@@ -133,7 +133,7 @@ const PhotoPage = () => {
               control={form.control}
               name="resolution"
               render={({ field }) => (
-                <FormItem className="col-span-12 lg:col-span-2">
+                <FormItem className="col-span-12 lg:col-span-2 bg-white text-black rounded-md">
                   <Select
                     disabled={isLoading}
                     onValueChange={field.onChange}
