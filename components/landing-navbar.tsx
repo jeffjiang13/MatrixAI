@@ -21,10 +21,10 @@ export const LandingNavbar = () => {
   };
 
   return (
-    <nav className="p-4 bg-transparent flex items-center justify-between relative">
+    <nav className="bg-transparent flex items-center justify-between relative">
       <Link href="/" className="flex items-center">
-        <div className="relative h-8 w-8 mr-4">
-          <Image layout="fill" alt="Logo" src="/logo.png" />
+        <div className="relative h-20 w-20">
+          <Image layout="fill" alt="Logo" src="/logo1.png" />
         </div>
         <h1 className={cn("text-2xl font-bold hidden sm:block", font.className)}>
           MatrixAI

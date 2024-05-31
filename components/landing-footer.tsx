@@ -5,14 +5,14 @@ import Image from 'next/image'
 
 export const LandingFooter = () => {
   return (
-    <footer className="py-4 mb-20 mt-20">
+    <footer className="py-2 mb-20 mt-20">
       <div className="max-w-screen-2xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center">
         <div className="text-center sm:text-left">
-          <aside className="flex items-center gap-2 justify-center sm:justify-start mb-4 sm:mb-0">
+          <aside className="flex items-center justify-center sm:justify-start -mb-1">
             <Image
-              src={'/logo.png'}
-              width={40}
-              height={40}
+              src={'/logo1.png'}
+              width={50}
+              height={50}
               alt="logo"
             />
             <h2 className="text-xl font-bold">MatrixAI</h2>
