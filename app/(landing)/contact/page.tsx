@@ -13,10 +13,10 @@ const Contact: React.FC = () => {
     emailjs.sendForm('service_xx1z4se', 'template_76ab09d', form.current!, 'aiOWrRF1FXzLf8_e_')
       .then((result) => {
           console.log(result.text);
-          setMessage(false); // Optionally reset message state or handle differently
+          setMessage(false);
       }, (error) => {
           console.log(error.text);
-          setMessage(false); // Optionally reset message state or handle differently
+          setMessage(false);
       });
       e.currentTarget.reset();
   };
