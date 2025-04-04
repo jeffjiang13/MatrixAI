@@ -71,3 +71,7 @@ Execute these commands using `npm run <command>` to manage the application:
 | `dev`   | Starts the app in development mode.        |
 
 ---
+
+
+## This Project is for Learning Purpose Only
+This project is a personal endeavor and is not intended for commercial use. It serves as a learning tool to explore the capabilities of Next.js 13, React, and various AI technologies. The code and resources are provided as-is, without any warranties or guarantees. Use at your own risk.
