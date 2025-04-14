@@ -12,7 +12,7 @@
 
 # SaaS AI Platform
 
-MatrixAI is a comprehensive SaaS AI Platform with a modern tech stack including Next.js 13, React, Tailwind CSS, Prisma, and Stripe. This platform is designed to offer a wide range of AI-powered tools, from image and video generation to music creation and conversational AI. Featuring a sleek Tailwind design, full responsiveness, and a variety of authentication methods, this platform is equipped to handle the needs of diverse users.
+NextGen is a comprehensive SaaS AI Platform with a modern tech stack including Next.js 13, React, Tailwind CSS, Prisma, and Stripe. This platform is designed to offer a wide range of AI-powered tools, from image and video generation to music creation and conversational AI. Featuring a sleek Tailwind design, full responsiveness, and a variety of authentication methods, this platform is equipped to handle the needs of diverse users.
 
 ## Features
 
@@ -43,7 +43,7 @@ MatrixAI is a comprehensive SaaS AI Platform with a modern tech stack including 
 ### Cloning the Repository
 
 ```bash
-git clone https://github.com/jeffjiang13/MatrixAI.git
+git clone https://github.com/jeffjiang13/NextGen.git
 ```
 
 ### Installing Dependencies

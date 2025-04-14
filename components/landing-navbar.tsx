@@ -27,7 +27,7 @@ export const LandingNavbar = () => {
           <Image layout="fill" alt="Logo" src="/logo1.png" />
         </div>
         <h1 className={cn("text-2xl font-bold hidden sm:block", font.className)}>
-          MatrixAI
+          NextGen
         </h1>
       </Link>
       <div className="hidden sm:flex items-center gap-x-10 font-semibold">

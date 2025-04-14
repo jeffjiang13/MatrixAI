@@ -37,20 +37,20 @@ const Documentation: React.FC = () => {
       </aside>
       <main className="flex-grow px-1 py-8 mx-auto lg:px-1 max-w-5xl">
         <header className="mb-10">
-          <h1 className="text-2xl lg:text-3xl font-bold text-center">MatrixAI Documentation</h1>
-          <p className='text-center'>Everything you need to know to get started and use MatrixAI.</p>
+          <h1 className="text-2xl lg:text-3xl font-bold text-center">NextGenAI Documentation</h1>
+          <p className='text-center'>Everything you need to know to get started and use NextGenAI.</p>
         </header>
         <section id="introduction" className="mb-8 border-b border-gray-200">
           <h2 className="text-2xl font-bold mb-3" onClick={() => toggleSection('introduction')}>Introduction</h2>
-          {isOpen.introduction && <p>MatrixAI is designed to serve as a robust platform integrating cutting-edge AI technologies to provide solutions for image and video generation, conversational AI, and music creation. This platform harnesses the power of Next.js, React, and additional modern technologies to deliver high-performance AI tools in a user-friendly environment. Here, we will guide you through the platform&apos;s architecture, highlight its unique features, and show how it can be tailored to meet various business needs.</p>}
+          {isOpen.introduction && <p>NextGenAI is designed to serve as a robust platform integrating cutting-edge AI technologies to provide solutions for image and video generation, conversational AI, and music creation. This platform harnesses the power of Next.js, React, and additional modern technologies to deliver high-performance AI tools in a user-friendly environment. Here, we will guide you through the platform&apos;s architecture, highlight its unique features, and show how it can be tailored to meet various business needs.</p>}
         </section>
         <section id="getting-started" className="mb-8 border-b border-gray-200">
           <h2 className="text-2xl font-bold mb-3" onClick={() => toggleSection('gettingStarted')}>Getting Started</h2>
-          {isOpen.gettingStarted && <p>To begin using MatrixAI, ensure you have Node.js version 18.x.x installed. Start by cloning the repository from GitHub, then navigate to the project directory and install all required dependencies using npm. This section will walk you through each step, explain the purpose of key dependencies, and offer troubleshooting tips for common setup issues. By the end, you&apos;ll have a local development environment running MatrixAI, ready for further exploration and customization.</p>}
+          {isOpen.gettingStarted && <p>To begin using NextGenAI, ensure you have Node.js version 18.x.x installed. Start by cloning the repository from GitHub, then navigate to the project directory and install all required dependencies using npm. This section will walk you through each step, explain the purpose of key dependencies, and offer troubleshooting tips for common setup issues. By the end, you&apos;ll have a local development environment running NextGen, ready for further exploration and customization.</p>}
         </section>
         <section id="features" className="mb-8 border-b border-gray-200">
           <h2 className="text-2xl font-bold mb-3" onClick={() => toggleSection('features')}>Features</h2>
-          {isOpen.features && <p>MatrixAI offers several cutting-edge features:
+          {isOpen.features && <p>NextGenAI offers several cutting-edge features:
             <br />
             - Image Generation: Utilize OpenAI&apos;s advanced algorithms to generate unique images based on textual descriptions.
             <br />
@@ -72,7 +72,7 @@ const Documentation: React.FC = () => {
             <br />
             - Error Handling: Common error codes and their meanings to help diagnose issues during API integration.
             <br />
-            The goal is to enable developers to integrate MatrixAI capabilities into their applications seamlessly.</p>}
+            The goal is to enable developers to integrate NextGen capabilities into their applications seamlessly.</p>}
         </section>
         <section id="faq" className="mb-8 border-b border-gray-200">
           <h2 className="text-2xl font-bold mb-3" onClick={() => toggleSection('faq')}>FAQ</h2>
@@ -80,14 +80,14 @@ const Documentation: React.FC = () => {
             <br />
             - How to upgrade your subscription plan?
             <br />
-            - What are the system requirements for using MatrixAI effectively?
+            - What are the system requirements for using NextGen effectively?
             <br />
-            - How to contribute to MatrixAI&apos;s development or report a bug?
+            - How to contribute to NextGen&apos;s development or report a bug?
             This section aims to quickly resolve common issues and clarify operational queries, improving user satisfaction and engagement.</p>}
         </section>
         <section id="support" className="mb-8 border-b border-gray-200">
           <h2 className="text-2xl font-bold mb-3" onClick={() => toggleSection('support')}>Support</h2>
-          {isOpen.support && <p>For technical support, users can contact the MatrixAI team via email or through the support ticket system available on the platform. Details on how to submit tickets, response times, and support hours are provided to ensure users receive assistance promptly and efficiently. The support section also includes links to community forums and additional resources for self-help.</p>}
+          {isOpen.support && <p>For technical support, users can contact the NextGen team via email or through the support ticket system available on the platform. Details on how to submit tickets, response times, and support hours are provided to ensure users receive assistance promptly and efficiently. The support section also includes links to community forums and additional resources for self-help.</p>}
         </section>
       </main>
     </div>

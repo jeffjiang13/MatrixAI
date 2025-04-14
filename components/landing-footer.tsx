@@ -15,9 +15,9 @@ export const LandingFooter = () => {
               height={50}
               alt="logo"
             />
-            <h2 className="text-xl font-bold">MatrixAI</h2>
+            <h2 className="text-xl font-bold">NextGen</h2>
           </aside>
-          <p>Contact us: info@matrixai.com</p>
+          <p>Contact us: info@NextGen.com</p>
         </div>
         <div>
           <div className="flex justify-center sm:justify-start space-x-6 py-2">
@@ -42,7 +42,7 @@ export const LandingFooter = () => {
               <FaGithub size={22}/>
             </Link>
           </div>
-          <p className="text-center sm:text-left">&copy; {new Date().getFullYear()} MatrixAI. All rights reserved.</p>
+          <p className="text-center sm:text-left">&copy; {new Date().getFullYear()} NextGen. All rights reserved.</p>
         </div>
       </div>
     </footer>
