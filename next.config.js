@@ -4,9 +4,11 @@ const nextConfig = {
     domains: [
       "googleusercontent.com",
       "oaidalleapiprodscus.blob.core.windows.net",
-      "cdn.openai.com"
+      "cdn.openai.com",
+      'img.clerk.com',
     ]
   },
+  reactStrictMode: false,
 }
 
 module.exports = nextConfig
